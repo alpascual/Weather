@@ -13,8 +13,11 @@
 #import "NSDictionary_JSONExtensions.h"
 #import "WeatherDayClass.h"
 #import "InfoViewController.h"
+#import "WeatherProtocol.h"
+#import "TwitterViewController.h"
+#import "ReverseGeocoding.h"
 
-@interface ViewController : UIViewController <CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface ViewController : UIViewController <CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate, WeatherProtocol>
 
 @property (nonatomic, strong) CLLocationManager *locMgr;
 
@@ -28,5 +31,10 @@
 
 @property (nonatomic, strong) NSMutableArray *listOfDaysClass;
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+
+@property (nonatomic, strong) NSString *X;
+@property (nonatomic, strong) NSString *Y;
+
+@property (nonatomic, strong) IBOutlet UILabel *noWhereLabel;
 
 @end

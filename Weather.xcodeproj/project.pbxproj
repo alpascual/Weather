@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7671ACDE14B010EE00A44809 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7671ACDD14B010EE00A44809 /* iAd.framework */; };
+		76BDCB5D149D9209009FE604 /* FriendsClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BDCB5C149D9209009FE604 /* FriendsClass.m */; };
+		76BDCB6C14A1A024009FE604 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BDCB6B14A1A024009FE604 /* Twitter.framework */; };
 		76BE3101149710F400DA7427 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BE3100149710F400DA7427 /* UIKit.framework */; };
 		76BE3103149710F400DA7427 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BE3102149710F400DA7427 /* Foundation.framework */; };
 		76BE3105149710F400DA7427 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BE3104149710F400DA7427 /* CoreGraphics.framework */; };
@@ -52,9 +55,19 @@
 		76BE31871499CBDD00DA7427 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BE31851499CBDD00DA7427 /* InfoViewController.xib */; };
 		76BE318B1499D20B00DA7427 /* TwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BE31891499D20B00DA7427 /* TwitterViewController.m */; };
 		76BE318C1499D20B00DA7427 /* TwitterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BE318A1499D20B00DA7427 /* TwitterViewController.xib */; };
+		76DD5EDF14AD83FD00C32E01 /* ReverseGeocoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DD5EDE14AD83FD00C32E01 /* ReverseGeocoding.m */; };
+		76DD5EE714AD8EFB00C32E01 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 76DD5EE214AD8EFB00C32E01 /* Icon-72.png */; };
+		76DD5EE814AD8EFB00C32E01 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 76DD5EE314AD8EFB00C32E01 /* Icon.png */; };
+		76DD5EE914AD8EFB00C32E01 /* Icon512.png in Resources */ = {isa = PBXBuildFile; fileRef = 76DD5EE414AD8EFB00C32E01 /* Icon512.png */; };
+		76DD5EEA14AD8EFB00C32E01 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76DD5EE514AD8EFB00C32E01 /* Icon@2x.png */; };
+		76DD5EEB14AD8EFB00C32E01 /* IconOriginal.png in Resources */ = {isa = PBXBuildFile; fileRef = 76DD5EE614AD8EFB00C32E01 /* IconOriginal.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7671ACDD14B010EE00A44809 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		76BDCB5B149D9209009FE604 /* FriendsClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsClass.h; sourceTree = "<group>"; };
+		76BDCB5C149D9209009FE604 /* FriendsClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsClass.m; sourceTree = "<group>"; };
+		76BDCB6B14A1A024009FE604 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		76BE30FC149710F400DA7427 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BE3100149710F400DA7427 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		76BE3102149710F400DA7427 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,6 +131,14 @@
 		76BE31881499D20B00DA7427 /* TwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterViewController.h; sourceTree = "<group>"; };
 		76BE31891499D20B00DA7427 /* TwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterViewController.m; sourceTree = "<group>"; };
 		76BE318A1499D20B00DA7427 /* TwitterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwitterViewController.xib; sourceTree = "<group>"; };
+		76BE3191149B17A100DA7427 /* WeatherProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherProtocol.h; sourceTree = "<group>"; };
+		76DD5EDD14AD83FD00C32E01 /* ReverseGeocoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverseGeocoding.h; sourceTree = "<group>"; };
+		76DD5EDE14AD83FD00C32E01 /* ReverseGeocoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReverseGeocoding.m; sourceTree = "<group>"; };
+		76DD5EE214AD8EFB00C32E01 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		76DD5EE314AD8EFB00C32E01 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		76DD5EE414AD8EFB00C32E01 /* Icon512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon512.png; sourceTree = "<group>"; };
+		76DD5EE514AD8EFB00C32E01 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		76DD5EE614AD8EFB00C32E01 /* IconOriginal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconOriginal.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +146,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7671ACDE14B010EE00A44809 /* iAd.framework in Frameworks */,
+				76BDCB6C14A1A024009FE604 /* Twitter.framework in Frameworks */,
 				76BE317914971DE200DA7427 /* CoreLocation.framework in Frameworks */,
 				76BE3101149710F400DA7427 /* UIKit.framework in Frameworks */,
 				76BE3103149710F400DA7427 /* Foundation.framework in Frameworks */,
@@ -138,6 +161,8 @@
 		76BE30F1149710F400DA7427 = {
 			isa = PBXGroup;
 			children = (
+				7671ACDD14B010EE00A44809 /* iAd.framework */,
+				76BDCB6B14A1A024009FE604 /* Twitter.framework */,
 				76BE317814971DE200DA7427 /* CoreLocation.framework */,
 				76BE3106149710F400DA7427 /* Weather */,
 				76BE30FF149710F400DA7427 /* Frameworks */,
@@ -183,6 +208,11 @@
 				76BE31881499D20B00DA7427 /* TwitterViewController.h */,
 				76BE31891499D20B00DA7427 /* TwitterViewController.m */,
 				76BE318A1499D20B00DA7427 /* TwitterViewController.xib */,
+				76BE3191149B17A100DA7427 /* WeatherProtocol.h */,
+				76BDCB5B149D9209009FE604 /* FriendsClass.h */,
+				76BDCB5C149D9209009FE604 /* FriendsClass.m */,
+				76DD5EDD14AD83FD00C32E01 /* ReverseGeocoding.h */,
+				76DD5EDE14AD83FD00C32E01 /* ReverseGeocoding.m */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -201,6 +231,7 @@
 		76BE31201497110100DA7427 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				76DD5EE114AD8EFB00C32E01 /* Icons */,
 				76BE31811499C96700DA7427 /* twitter-bird.png */,
 				76BE313E149712A200DA7427 /* clouds.jpg */,
 				76BE313F149712A200DA7427 /* leather.jpg */,
@@ -275,6 +306,19 @@
 				76BE316A149716B800DA7427 /* NSDictionary_JSONExtensions.m */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		76DD5EE114AD8EFB00C32E01 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				76DD5EE214AD8EFB00C32E01 /* Icon-72.png */,
+				76DD5EE314AD8EFB00C32E01 /* Icon.png */,
+				76DD5EE414AD8EFB00C32E01 /* Icon512.png */,
+				76DD5EE514AD8EFB00C32E01 /* Icon@2x.png */,
+				76DD5EE614AD8EFB00C32E01 /* IconOriginal.png */,
+			);
+			name = Icons;
+			path = Resources/Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +397,11 @@
 				76BE31821499C96800DA7427 /* twitter-bird.png in Resources */,
 				76BE31871499CBDD00DA7427 /* InfoViewController.xib in Resources */,
 				76BE318C1499D20B00DA7427 /* TwitterViewController.xib in Resources */,
+				76DD5EE714AD8EFB00C32E01 /* Icon-72.png in Resources */,
+				76DD5EE814AD8EFB00C32E01 /* Icon.png in Resources */,
+				76DD5EE914AD8EFB00C32E01 /* Icon512.png in Resources */,
+				76DD5EEA14AD8EFB00C32E01 /* Icon@2x.png in Resources */,
+				76DD5EEB14AD8EFB00C32E01 /* IconOriginal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +427,8 @@
 				76BE31801498592500DA7427 /* WeatherDayClass.m in Sources */,
 				76BE31861499CBDD00DA7427 /* InfoViewController.m in Sources */,
 				76BE318B1499D20B00DA7427 /* TwitterViewController.m in Sources */,
+				76BDCB5D149D9209009FE604 /* FriendsClass.m in Sources */,
+				76DD5EDF14AD83FD00C32E01 /* ReverseGeocoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +462,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		76B9FF2814B00C3D007F3870 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		76B9FF2914B00C3D007F3870 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Weather/Weather-Prefix.pch";
+				INFOPLIST_FILE = "Weather/Weather-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
 		76BE311B149710F400DA7427 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -461,10 +550,14 @@
 		76BE311E149710F400DA7427 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Weather/Weather-Prefix.pch";
 				INFOPLIST_FILE = "Weather/Weather-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -475,7 +568,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Weather/Weather-Prefix.pch";
 				INFOPLIST_FILE = "Weather/Weather-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -488,6 +583,7 @@
 			buildConfigurations = (
 				76BE311B149710F400DA7427 /* Debug */,
 				76BE311C149710F400DA7427 /* Release */,
+				76B9FF2814B00C3D007F3870 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -497,8 +593,10 @@
 			buildConfigurations = (
 				76BE311E149710F400DA7427 /* Debug */,
 				76BE311F149710F400DA7427 /* Release */,
+				76B9FF2914B00C3D007F3870 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

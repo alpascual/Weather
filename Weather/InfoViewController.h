@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WeatherProtocol.h"
 
 @interface InfoViewController : UIViewController
+
+@property (strong, nonatomic) id <WeatherProtocol> weatherDelegate;
+
 
 @end

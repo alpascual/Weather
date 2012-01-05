@@ -10,6 +10,8 @@
 
 @implementation InfoViewController
 
+@synthesize weatherDelegate = _weatherDelegate;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -35,6 +37,8 @@
     // Do any additional setup after loading the view from its nib.
     
     self.title = @"Information";
+    
+    
 }
 
 - (void)viewDidUnload
@@ -48,6 +52,11 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (IBAction)donePressed:(id)sender {
+    
+    [self.weatherDelegate DonePressed];
 }
 
 @end

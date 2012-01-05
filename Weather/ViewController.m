@@ -19,6 +19,11 @@
 @synthesize statusImage = _statusImage;
 @synthesize listOfDaysClass = _listOfDaysClass;
 @synthesize tableView = _tableView;
+@synthesize noWhereLabel = _noWhereLabel;
+@synthesize backgroundImage = _backgroundImage;
+
+@synthesize X = _X;
+@synthesize Y = _Y;
 
 - (void)didReceiveMemoryWarning
 {
@@ -40,6 +45,8 @@
     //Social calls
     //http://weather.alsandbox.us/api.aspx?operation=list&username=alpascual
     //http://weather.alsandbox.us/api.aspx?operation=add&username=test1&x=12.2222&y=-12.11111
+    
+    
    
 }
 
@@ -97,6 +104,13 @@
     if ( self.listOfDaysClass != nil )
         return;
     
+    // Save X and Y
+    self.X = [[NSString alloc] initWithFormat:@"%f", newLocation.coordinate.latitude];
+    self.Y = [[NSString alloc] initWithFormat:@"%f", newLocation.coordinate.longitude];
+    
+    ReverseGeocoding *reverse = [[ReverseGeocoding alloc] init];
+    self.noWhereLabel.text = [reverse GetAddressFromLatLon:self.X :self.Y];
+    
     // Make request
     //Powered by World Weather Online
     NSString *myRequestString = [[NSString alloc] initWithFormat:@"http://free.worldweatheronline.com/feed/weather.ashx?q=%f,%f&format=json&num_of_days=5&key=5ac3984a51201927111608", newLocation.coordinate.latitude, newLocation.coordinate.longitude];
@@ -117,9 +131,38 @@
     self.temperatureF.text = [temp objectForKey:@"temp_F"];
     self.temperatureC.text = [temp objectForKey:@"temp_C"];
     
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:[self.temperatureF.text intValue]];    
+    
+    [UIApplication sharedApplication].applicationIconBadgeNumber = [self.temperatureF.text intValue];
+    
     id weatherDesc = [temp objectForKey:@"weatherDesc"];
     NSDictionary *weatherValues = [weatherDesc objectAtIndex:0];
     self.statusMessage.text = [weatherValues objectForKey:@"value"];
+    
+    NSLog(@"Status String: %@", self.statusMessage.text);
+    NSString *weatherCode = [temp objectForKey:@"weatherCode"];
+    int iWeatherCode = [weatherCode intValue];
+    
+    // Mist and Cloudy
+    if ( iWeatherCode < 200 ) {
+        self.backgroundImage.image = [UIImage imageNamed:@"clouds.jpg"];
+        
+    }
+    // Snow and Freezing
+    else if ( iWeatherCode < 300 ) {
+        self.backgroundImage.image = [UIImage imageNamed:@"winter.jpg"];
+    }
+    // Rain
+    else if ( iWeatherCode < 400 ) {
+        self.backgroundImage.image = [UIImage imageNamed:@"rain.jpg"];
+    }
+    // Sunny?
+    else
+    {
+        self.backgroundImage.image = [UIImage imageNamed:@"spring.jpg"];
+    }
+        
+    
     
     NSArray *arrayUrl = [temp objectForKey:@"weatherIconUrl"];
     NSDictionary *urlDic = [arrayUrl objectAtIndex:0];
@@ -221,15 +264,30 @@
 
 - (IBAction)twitterPress:(id)sender {
     
+    TwitterViewController *twitter = [[TwitterViewController alloc] initWithNibName:@"TwitterViewController" bundle:nil];
+    twitter.X = self.X;
+    twitter.Y = self.Y;
+    
+    twitter.weatherDelegate = self;
+    twitter.modalPresentationStyle = UIModalPresentationFullScreen;
+    
+    [self presentModalViewController:twitter animated:YES];
 }
 
 - (IBAction)infoPressed:(id)sender {
     
     InfoViewController  *info = [[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:nil];
     
+    info.weatherDelegate = self;
+    
     info.modalPresentationStyle = UIModalPresentationFullScreen;
     
     [self presentModalViewController:info animated:YES];
+}
+
+-(void) DonePressed
+{
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end
