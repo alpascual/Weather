@@ -375,6 +375,14 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">banner</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="134345125"/>
+					</object>
+					<int key="connectionID">31</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">dataSource</string>
 						<reference key="source" ref="677707337"/>
 						<reference key="destination" ref="372490531"/>
@@ -555,7 +563,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">30</int>
+			<int key="maxID">31</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -565,6 +573,7 @@
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="activity">UIActivityIndicatorView</string>
 						<string key="atSign">UILabel</string>
+						<string key="banner">ADBannerView</string>
 						<string key="searchButton">UIButton</string>
 						<string key="tableView">UITableView</string>
 						<string key="twitterBackground">UIImageView</string>
@@ -579,6 +588,10 @@
 						<object class="IBToOneOutletInfo" key="atSign">
 							<string key="name">atSign</string>
 							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="banner">
+							<string key="name">banner</string>
+							<string key="candidateClassName">ADBannerView</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="searchButton">
 							<string key="name">searchButton</string>

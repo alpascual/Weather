@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iAd/ADBannerView.h"
+
 #import "WeatherProtocol.h"
 
-@interface InfoViewController : UIViewController
+
+@interface InfoViewController : UIViewController <ADBannerViewDelegate>
 
 @property (strong, nonatomic) id <WeatherProtocol> weatherDelegate;
+@property (strong, nonatomic) IBOutlet ADBannerView *banner;
 
 
 @end

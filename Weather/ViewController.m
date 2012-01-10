@@ -21,6 +21,7 @@
 @synthesize tableView = _tableView;
 @synthesize noWhereLabel = _noWhereLabel;
 @synthesize backgroundImage = _backgroundImage;
+@synthesize banner = _banner;
 
 @synthesize X = _X;
 @synthesize Y = _Y;
@@ -46,7 +47,7 @@
     //http://weather.alsandbox.us/api.aspx?operation=list&username=alpascual
     //http://weather.alsandbox.us/api.aspx?operation=add&username=test1&x=12.2222&y=-12.11111
     
-    
+    self.banner.delegate = self;
    
 }
 
@@ -288,6 +289,15 @@
 -(void) DonePressed
 {
     [self dismissModalViewControllerAnimated:YES];
+}
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+{
+    [UIView beginAnimations:@"animateAdBannerOff" context:NULL];
+    // assumes the banner view is at the top of the screen.
+    banner.frame = CGRectOffset(banner.frame, 0, -50);
+    [UIView commitAnimations];
+    
 }
 
 @end

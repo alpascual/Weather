@@ -20,6 +20,7 @@
 @synthesize tableView = _tableView;
 @synthesize activity = _activity;
 @synthesize startLookingTimer = _startLookingTimer;
+@synthesize banner = _banner;
 
 @synthesize X = _X;
 @synthesize Y = _Y;
@@ -31,6 +32,8 @@
     if (self) {
         // Custom initialization
     }
+    
+    self.banner.delegate = self;
     return self;
 }
 
@@ -254,5 +257,14 @@
     [self presentModalViewController:twitterView animated:YES];
 }
 
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+{
+    [UIView beginAnimations:@"animateAdBannerOff" context:NULL];
+    // assumes the banner view is at the top of the screen.
+    banner.frame = CGRectOffset(banner.frame, 0, -50);
+    [UIView commitAnimations];
+    
+}
 
 @end

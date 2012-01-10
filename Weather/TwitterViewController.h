@@ -12,8 +12,9 @@
 #import "TwitterViewController.h"
 #import <Twitter/Twitter.h>
 #import "ReverseGeocoding.h"
+#import "iAd/ADBannerView.h"
 
-@interface TwitterViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface TwitterViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, ADBannerViewDelegate>
 
 @property (strong, nonatomic) id <WeatherProtocol> weatherDelegate;
 
@@ -30,6 +31,7 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activity;
+@property (strong, nonatomic) IBOutlet ADBannerView *banner;
 
 @property (strong, nonatomic) NSTimer *startLookingTimer;
 

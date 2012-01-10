@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "iAd/ADBannerView.h"
 
 #import "CJSONDeserializer.h"
 #import "NSDictionary_JSONExtensions.h"
@@ -17,7 +18,7 @@
 #import "TwitterViewController.h"
 #import "ReverseGeocoding.h"
 
-@interface ViewController : UIViewController <CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate, WeatherProtocol>
+@interface ViewController : UIViewController <CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate, WeatherProtocol, ADBannerViewDelegate>
 
 @property (nonatomic, strong) CLLocationManager *locMgr;
 
@@ -36,5 +37,6 @@
 @property (nonatomic, strong) NSString *Y;
 
 @property (nonatomic, strong) IBOutlet UILabel *noWhereLabel;
+@property (strong, nonatomic) IBOutlet ADBannerView *banner;
 
 @end

@@ -11,6 +11,7 @@
 @implementation InfoViewController
 
 @synthesize weatherDelegate = _weatherDelegate;
+@synthesize banner = _banner;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,7 +39,7 @@
     
     self.title = @"Information";
     
-    
+    self.banner.delegate = self;
 }
 
 - (void)viewDidUnload
@@ -57,6 +58,15 @@
 - (IBAction)donePressed:(id)sender {
     
     [self.weatherDelegate DonePressed];
+}
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+{
+    [UIView beginAnimations:@"animateAdBannerOff" context:NULL];
+    // assumes the banner view is at the top of the screen.
+    banner.frame = CGRectOffset(banner.frame, 0, -50);
+    [UIView commitAnimations];
+    
 }
 
 @end
