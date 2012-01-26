@@ -38,5 +38,6 @@
 
 @property (nonatomic, strong) IBOutlet UILabel *noWhereLabel;
 @property (strong, nonatomic) IBOutlet ADBannerView *banner;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activity;
 
 @end

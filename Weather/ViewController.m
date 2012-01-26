@@ -22,6 +22,7 @@
 @synthesize noWhereLabel = _noWhereLabel;
 @synthesize backgroundImage = _backgroundImage;
 @synthesize banner = _banner;
+@synthesize activity = _activity;
 
 @synthesize X = _X;
 @synthesize Y = _Y;
@@ -202,6 +203,7 @@
     }
     
     [self.tableView reloadData];
+    [self.activity stopAnimating];
     
 }
 
