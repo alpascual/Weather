@@ -13,6 +13,6 @@
 @interface ReverseGeocoding : NSObject
 
 
-- (NSString *) GetAddressFromLatLon:(NSString *)Lat:(NSString *)Lon;
+- (NSString *) GetAddressFromLatLon:(NSString *)Lat Long:(NSString *)Lon;
 
 @end

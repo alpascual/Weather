@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7671ACDE14B010EE00A44809 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7671ACDD14B010EE00A44809 /* iAd.framework */; };
+		7687F3E016CDDA9F00B74EB1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7687F3DF16CDDA9F00B74EB1 /* Default-568h@2x.png */; };
 		76BDCB5D149D9209009FE604 /* FriendsClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BDCB5C149D9209009FE604 /* FriendsClass.m */; };
 		76BDCB6C14A1A024009FE604 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BDCB6B14A1A024009FE604 /* Twitter.framework */; };
 		76BE3101149710F400DA7427 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BE3100149710F400DA7427 /* UIKit.framework */; };
@@ -65,6 +66,7 @@
 
 /* Begin PBXFileReference section */
 		7671ACDD14B010EE00A44809 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		7687F3DF16CDDA9F00B74EB1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		76BDCB5B149D9209009FE604 /* FriendsClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsClass.h; sourceTree = "<group>"; };
 		76BDCB5C149D9209009FE604 /* FriendsClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsClass.m; sourceTree = "<group>"; };
 		76BDCB6B14A1A024009FE604 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
@@ -161,6 +163,7 @@
 		76BE30F1149710F400DA7427 = {
 			isa = PBXGroup;
 			children = (
+				7687F3DF16CDDA9F00B74EB1 /* Default-568h@2x.png */,
 				7671ACDD14B010EE00A44809 /* iAd.framework */,
 				76BDCB6B14A1A024009FE604 /* Twitter.framework */,
 				76BE317814971DE200DA7427 /* CoreLocation.framework */,
@@ -347,7 +350,7 @@
 		76BE30F3149710F400DA7427 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = 76BE30F6149710F400DA7427 /* Build configuration list for PBXProject "Weather" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -402,6 +405,7 @@
 				76DD5EE914AD8EFB00C32E01 /* Icon512.png in Resources */,
 				76DD5EEA14AD8EFB00C32E01 /* Icon@2x.png in Resources */,
 				76DD5EEB14AD8EFB00C32E01 /* IconOriginal.png in Resources */,
+				7687F3E016CDDA9F00B74EB1 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,12 +472,17 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -490,8 +499,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Weather/Weather-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "Weather/Weather-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -506,6 +516,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -519,6 +533,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
@@ -532,12 +547,17 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -551,12 +571,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Weather/Weather-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "Weather/Weather-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -565,11 +588,16 @@
 		76BE311F149710F400DA7427 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Weather/Weather-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "Weather/Weather-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

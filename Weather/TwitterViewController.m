@@ -195,7 +195,7 @@
     cell.textLabel.text = anObject.Username;
     
     ReverseGeocoding *reverse = [[ReverseGeocoding alloc] init];       
-    NSString *noWhereLabel = [reverse GetAddressFromLatLon:[[NSString alloc] initWithFormat:@"%@", anObject.X] :[[NSString alloc] initWithFormat:@"%@", anObject.Y]];
+    NSString *noWhereLabel = [reverse GetAddressFromLatLon:[[NSString alloc] initWithFormat:@"%@", anObject.X] Long:[[NSString alloc] initWithFormat:@"%@", anObject.Y]];
     
     // Request info
     NSString *myRequestString = [[NSString alloc] initWithFormat:@"http://free.worldweatheronline.com/feed/weather.ashx?q=%@,%@&format=json&num_of_days=5&key=5ac3984a51201927111608", anObject.X, anObject.Y];

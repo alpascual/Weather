@@ -16,6 +16,7 @@
 
 @property (strong, nonatomic) id <WeatherProtocol> weatherDelegate;
 @property (strong, nonatomic) IBOutlet ADBannerView *banner;
+@property (strong, nonatomic) IBOutlet UISwitch *lockEnabled;
 
 
 @end

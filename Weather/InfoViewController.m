@@ -38,8 +38,31 @@
     // Do any additional setup after loading the view from its nib.
     
     self.title = @"Information";
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *stringValue = [defaults objectForKey:@"lockscreenenable"];
+    NSLog(@"%@", stringValue);
+
+    if ( [stringValue isEqualToString:@"YES"] == YES)
+        [self.lockEnabled setOn:YES];
+    else
+        [self.lockEnabled setOn:NO];
     
     self.banner.delegate = self;
+}
+
+- (IBAction)changeSwitch:(id)sender
+{
+    UISwitch *lockEnabledSwitch = (UISwitch*)sender;
+    
+    NSString *stringValue = @"NO";
+    if ( lockEnabledSwitch.isOn == YES)
+        stringValue = @"YES";
+    
+    NSLog(@"value %@", stringValue);
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:stringValue forKey:@"lockscreenenable"];
+    [defaults synchronize];
 }
 
 - (void)viewDidUnload

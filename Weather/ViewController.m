@@ -39,6 +39,12 @@
 {
     [super viewDidLoad];
     
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ( [defaults objectForKey:@"lockscreenenable"] == nil) {
+        [defaults setObject:@"YES" forKey:@"lockscreenenable"];
+        [defaults synchronize];
+    }
+    
     self.locMgr = [[CLLocationManager alloc] init]; // Create new instance of locMgr
     self.locMgr.delegate = self; // Set the delegate as self.
     
@@ -111,7 +117,7 @@
     self.Y = [[NSString alloc] initWithFormat:@"%f", newLocation.coordinate.longitude];
     
     ReverseGeocoding *reverse = [[ReverseGeocoding alloc] init];
-    self.noWhereLabel.text = [reverse GetAddressFromLatLon:self.X :self.Y];
+    self.noWhereLabel.text = [reverse GetAddressFromLatLon:self.X Long:self.Y];
     
     // Make request
     //Powered by World Weather Online
