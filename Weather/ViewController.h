@@ -17,6 +17,7 @@
 #import "WeatherProtocol.h"
 #import "TwitterViewController.h"
 #import "ReverseGeocoding.h"
+#import "ProcessImageRunner.h"
 
 @interface ViewController : UIViewController <CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate, WeatherProtocol, ADBannerViewDelegate>
 

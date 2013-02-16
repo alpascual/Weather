@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7671ACDE14B010EE00A44809 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7671ACDD14B010EE00A44809 /* iAd.framework */; };
 		7687F3E016CDDA9F00B74EB1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7687F3DF16CDDA9F00B74EB1 /* Default-568h@2x.png */; };
+		7687F3E316CF467D00B74EB1 /* ProcessImageRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7687F3E216CF467D00B74EB1 /* ProcessImageRunner.m */; };
 		76BDCB5D149D9209009FE604 /* FriendsClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BDCB5C149D9209009FE604 /* FriendsClass.m */; };
 		76BDCB6C14A1A024009FE604 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BDCB6B14A1A024009FE604 /* Twitter.framework */; };
 		76BE3101149710F400DA7427 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BE3100149710F400DA7427 /* UIKit.framework */; };
@@ -67,6 +68,8 @@
 /* Begin PBXFileReference section */
 		7671ACDD14B010EE00A44809 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		7687F3DF16CDDA9F00B74EB1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7687F3E116CF467D00B74EB1 /* ProcessImageRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessImageRunner.h; sourceTree = "<group>"; };
+		7687F3E216CF467D00B74EB1 /* ProcessImageRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessImageRunner.m; sourceTree = "<group>"; };
 		76BDCB5B149D9209009FE604 /* FriendsClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsClass.h; sourceTree = "<group>"; };
 		76BDCB5C149D9209009FE604 /* FriendsClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsClass.m; sourceTree = "<group>"; };
 		76BDCB6B14A1A024009FE604 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
@@ -216,6 +219,8 @@
 				76BDCB5C149D9209009FE604 /* FriendsClass.m */,
 				76DD5EDD14AD83FD00C32E01 /* ReverseGeocoding.h */,
 				76DD5EDE14AD83FD00C32E01 /* ReverseGeocoding.m */,
+				7687F3E116CF467D00B74EB1 /* ProcessImageRunner.h */,
+				7687F3E216CF467D00B74EB1 /* ProcessImageRunner.m */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -433,6 +438,7 @@
 				76BE318B1499D20B00DA7427 /* TwitterViewController.m in Sources */,
 				76BDCB5D149D9209009FE604 /* FriendsClass.m in Sources */,
 				76DD5EDF14AD83FD00C32E01 /* ReverseGeocoding.m in Sources */,
+				7687F3E316CF467D00B74EB1 /* ProcessImageRunner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

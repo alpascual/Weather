@@ -92,7 +92,7 @@
 						<string key="NSFrame">{{44, 48}, {228, 120}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="65418791"/>
+						<reference key="NSNextKeyView" ref="441601011"/>
 						<string key="NSReuseIdentifierKey">_NS:328</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -133,9 +133,9 @@
 							<bytes key="NSWhite">MC4zMzMzMzMzMzMzAA</bytes>
 						</object>
 					</object>
-					<object class="IBUISwitch" id="254120179">
+					<object class="IBUISwitch" id="60740315">
 						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
+						<int key="NSvFlags">-2147483356</int>
 						<string key="NSFrame">{{170, 216}, {94, 27}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
@@ -147,13 +147,13 @@
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<bool key="IBUIOn">YES</bool>
 					</object>
-					<object class="IBUILabel" id="65418791">
+					<object class="IBUILabel" id="441601011">
 						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
+						<int key="NSvFlags">-2147483356</int>
 						<string key="NSFrame">{{53, 186}, {124, 93}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="254120179"/>
+						<reference key="NSNextKeyView" ref="60740315"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -207,7 +207,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">lockEnabled</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="254120179"/>
+						<reference key="destination" ref="60740315"/>
 					</object>
 					<int key="connectionID">19</int>
 				</object>
@@ -222,7 +222,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">changeSwitch:</string>
-						<reference key="source" ref="254120179"/>
+						<reference key="source" ref="60740315"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">13</int>
 					</object>
@@ -245,8 +245,8 @@
 							<reference ref="16928954"/>
 							<reference ref="574670336"/>
 							<reference ref="941580876"/>
-							<reference ref="254120179"/>
-							<reference ref="65418791"/>
+							<reference ref="60740315"/>
+							<reference ref="441601011"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -291,12 +291,12 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">17</int>
-						<reference key="object" ref="254120179"/>
+						<reference key="object" ref="60740315"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">18</int>
-						<reference key="object" ref="65418791"/>
+						<reference key="object" ref="441601011"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>
